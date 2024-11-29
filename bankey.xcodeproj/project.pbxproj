@@ -12,6 +12,14 @@
 		3A49D2372CF68471001653E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A49D2362CF68471001653E1 /* Assets.xcassets */; };
 		3A49D23A2CF68471001653E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49D2382CF68471001653E1 /* LaunchScreen.storyboard */; };
 		3A49D2442CF689EC001653E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49D2432CF689EC001653E1 /* LoginView.swift */; };
+		3A49D2472CF6E894001653E1 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49D2462CF6E894001653E1 /* OnboardingContainerViewController.swift */; };
+		3A49D2492CF6EF07001653E1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49D2482CF6EF07001653E1 /* OnboardingViewController.swift */; };
+		3AD1AD472CF78C9A009FBF6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1AD462CF78C9A009FBF6F /* HomeViewController.swift */; };
+		3AD1AD4A2CF79174009FBF6F /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1AD492CF79174009FBF6F /* LocalState.swift */; };
+		3AD1AD4C2CF994CD009FBF6F /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1AD4B2CF994CD009FBF6F /* UIViewController+Utils.swift */; };
+		3AD1AD512CFA12D7009FBF6F /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1AD502CFA12D7009FBF6F /* AccountSummaryViewController.swift */; };
+		3AD1AD532CFA12E7009FBF6F /* MoneyTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1AD522CFA12E7009FBF6F /* MoneyTransferViewController.swift */; };
+		3AD1AD552CFA12F4009FBF6F /* MoreOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1AD542CFA12F4009FBF6F /* MoreOptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		3A49D2392CF68471001653E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A49D23B2CF68471001653E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A49D2432CF689EC001653E1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3A49D2462CF6E894001653E1 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		3A49D2482CF6EF07001653E1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		3AD1AD462CF78C9A009FBF6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3AD1AD492CF79174009FBF6F /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		3AD1AD4B2CF994CD009FBF6F /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		3AD1AD502CFA12D7009FBF6F /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		3AD1AD522CFA12E7009FBF6F /* MoneyTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTransferViewController.swift; sourceTree = "<group>"; };
+		3AD1AD542CFA12F4009FBF6F /* MoreOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +70,14 @@
 		3A49D22C2CF68470001653E1 /* bankey */ = {
 			isa = PBXGroup;
 			children = (
+				3AD1AD4F2CFA12A9009FBF6F /* MoreOptions */,
+				3AD1AD4E2CFA129B009FBF6F /* MoneyTransfer */,
+				3AD1AD4D2CFA128A009FBF6F /* AccountSummary */,
+				3AD1AD482CF79161009FBF6F /* Utils */,
 				3A49D2412CF68965001653E1 /* Files */,
 				3A49D2422CF689A9001653E1 /* Login */,
+				3A49D2452CF6E86E001653E1 /* Onboarding */,
+				3AD1AD452CF78C79009FBF6F /* Home */,
 				3A49D22D2CF68470001653E1 /* AppDelegate.swift */,
 			);
 			path = bankey;
@@ -78,6 +100,56 @@
 				3A49D2432CF689EC001653E1 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		3A49D2452CF6E86E001653E1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3A49D2462CF6E894001653E1 /* OnboardingContainerViewController.swift */,
+				3A49D2482CF6EF07001653E1 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3AD1AD452CF78C79009FBF6F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1AD462CF78C9A009FBF6F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3AD1AD482CF79161009FBF6F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1AD492CF79174009FBF6F /* LocalState.swift */,
+				3AD1AD4B2CF994CD009FBF6F /* UIViewController+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3AD1AD4D2CFA128A009FBF6F /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1AD502CFA12D7009FBF6F /* AccountSummaryViewController.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		3AD1AD4E2CFA129B009FBF6F /* MoneyTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1AD522CFA12E7009FBF6F /* MoneyTransferViewController.swift */,
+			);
+			path = MoneyTransfer;
+			sourceTree = "<group>";
+		};
+		3AD1AD4F2CFA12A9009FBF6F /* MoreOptions */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1AD542CFA12F4009FBF6F /* MoreOptionsViewController.swift */,
+			);
+			path = MoreOptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +222,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD1AD532CFA12E7009FBF6F /* MoneyTransferViewController.swift in Sources */,
+				3AD1AD4C2CF994CD009FBF6F /* UIViewController+Utils.swift in Sources */,
 				3A49D2442CF689EC001653E1 /* LoginView.swift in Sources */,
+				3AD1AD4A2CF79174009FBF6F /* LocalState.swift in Sources */,
 				3A49D2322CF68470001653E1 /* LoginViewController.swift in Sources */,
+				3A49D2492CF6EF07001653E1 /* OnboardingViewController.swift in Sources */,
 				3A49D22E2CF68470001653E1 /* AppDelegate.swift in Sources */,
+				3AD1AD552CFA12F4009FBF6F /* MoreOptionsViewController.swift in Sources */,
+				3A49D2472CF6E894001653E1 /* OnboardingContainerViewController.swift in Sources */,
+				3AD1AD472CF78C9A009FBF6F /* HomeViewController.swift in Sources */,
+				3AD1AD512CFA12D7009FBF6F /* AccountSummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
