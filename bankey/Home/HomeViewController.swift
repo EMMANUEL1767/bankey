@@ -21,17 +21,17 @@ class HomeViewController: UITabBarController {
         let moreOptionsVC = MoreOptionsViewController()
 
         summaryVC.setTabBarImage(imageName: "list.dash.header.rectangle", title: "Summary")
-        moneytransferVC.setTabBarImage(imageName: "arrow.left.arrow.right", title: "Move Money")
+        moneytransferVC.setTabBarImage(imageName: "arrow.left.arrow.right", title: "Transfer")
         moreOptionsVC.setTabBarImage(imageName: "ellipsis.circle", title: "More")
 
         let summaryNC = UINavigationController(rootViewController: summaryVC)
-        let moneyNC = UINavigationController(rootViewController: moneytransferVC)
-        let moreNC = UINavigationController(rootViewController: moreOptionsVC)
+        let moneyTransferNC = UINavigationController(rootViewController: moneytransferVC)
+        let moreOptionsNC = UINavigationController(rootViewController: moreOptionsVC)
 
         summaryNC.navigationBar.barTintColor = appColor
         hideNavigationBarLine(summaryNC.navigationBar)
         
-        let tabBarList = [summaryNC, moneytransferVC, moreOptionsVC]
+        let tabBarList = [summaryNC, moneyTransferNC, moreOptionsNC]
 
         viewControllers = tabBarList
     }
